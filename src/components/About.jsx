@@ -2,10 +2,10 @@ import React from 'react';
 import pfp from '../assets/pfp.jpg';
 import SagarikaResume from '../assets/SagarikaResume.pdf';
 import { ReactTyped } from 'react-typed';
-import { FaFileDownload, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaEye, FaFileDownload, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { Bio } from '../data/Bio';
 
-const container = 'bg-gradient-to-b from-slate-950 to-slate-900 text-gray-100 text-xl p-8 md:px-24 md:py-20 flex flex-col md:flex-row-reverse gap-6 justify-center items-center';
+const container = 'bg-gradient-to-b from-slate-950 to-slate-900 text-gray-100 text-xl lg:p-8 p-4 md:px-24 md:py-20 flex flex-col md:flex-row-reverse gap-6 justify-center items-center';
 const imgWrapper = 'relative flex-1 flex justify-center items-center'; // Added relative class
 const imgStyle = 'rounded-full border border-lime-800 hover:border-lime-500 duration-500 transform hover:scale-105 w-5/6 lg:w-2/3';
 const glowingBg = 'absolute inset-0 rounded-full bg-blue-500 opacity-50 blur-lg'; // Adjusted glowing background styles
@@ -17,7 +17,7 @@ const typedWrapper = 'text-xl font-semibold mt-2';
 const aStyle = 'font-bold mr-2';
 const typedStyle = 'text-2xl text-gray-950 p-1 px-4 rounded bg-gradient-to-l text-white';
 const btnStyle = 'md:w-2/5 bg-gradient-to-r from-cyan-500 to-blue-500 shadow hover:shadow-cyan-400 duration-500 text-gray-950 font-semibold rounded-lg p-2 px-3 transform hover:scale-105 ';
-const linkStyle = 'flex justify-center items-center gap-3 transition duration-300 ease-in-out transform hover:scale-105 lg:text-md text-sm';
+const linkStyle = 'flex justify-center items-center gap-3 transition duration-300 ease-in-out transform hover:scale-105 text-md';
 const socialMediaWrapper = 'flex justify-center lg:justify-start items-start gap-1 lg:w-1/2';
 const socialMediaIcon = 'ml-2 md:mx-2 hover:text-cyan-400 text-2xl w-10 transition duration-300 ease-in-out transform hover:scale-105';
 
@@ -52,7 +52,7 @@ function About() {
             />
           </div>
         </div>
-        <div className='text-base lg:text-lg'> {Bio.description}</div>
+        <div className='text-base lg:text-lg bg-gradient-to-b from-slate-900 to-black p-2 rounded-md'> {Bio.description}</div>
         <div className='flex gap-5 w-full'>
           <button className={btnStyle}>
             <a className={linkStyle} href={SagarikaResume} download='SagarikaResume.pdf' target="_blank">
@@ -61,7 +61,7 @@ function About() {
           </button>
           <button className={btnStyle}>
             <a className={linkStyle} href={'https://drive.google.com/file/d/1-VFIKeBmhqMfQdn0mTeumSYTIXmfpYUu/view?usp=sharing'} target="_blank">
-              View Resume <FaFileDownload/>
+              View Resume <FaEye/>
             </a>
           </button>
           </div>

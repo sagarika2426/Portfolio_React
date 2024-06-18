@@ -4,14 +4,14 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import { Bio } from '../data/Bio';
 
 
-const navbarContainer = `flex justify-around items-center bg-gray-950 p-4`;
+const navbarContainer = `flex justify-between items-center bg-gray-950 py-4 px-4 lg:px-10`;
 const logoWrapper = `flex justify-center items-center gap-2 cursor-pointer`
 const logo = ` text-xl text-amber-600 font-bold`;
 const nav = ` hidden md:flex justify-center items-center list-none gap-10 `;
 const navLink = `hover:text-cyan-400 text-xl font-semibold duration-500 cursor-pointer`;
 const btnSytle = 'hidden lg:flex bg-gradient-to-r from-cyan-500 to-blue-500 shadow hover:shadow-cyan-400 duration-500 text-gray-950 rounded-lg p-3 px-8'
 const faWrapper = 'md:hidden cursor-pointer text-cyan-600 hover:text-cyan-400 duration-200'
-const mobileNav = 'md:hidden h-screen bg-gray-950 w-1/2 fixed right-0 p-4'
+const mobileNav = 'md:hidden h-screen bg-gray-950 w-1/2 fixed right-0 p-2'
 const mobileNavUl = 'flex flex-col gap-7 justify-center items-center'
 
 function Navbar() {

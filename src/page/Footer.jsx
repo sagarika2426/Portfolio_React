@@ -17,7 +17,7 @@ function Footer() {
         <div className={socialMediaWrapper}>
           <a className={socialMediaIcon} href={Bio.github} target='_blank'><FaGithub /></a>
           <a className={socialMediaIcon} href={Bio.linkedin} target='_blank'><FaLinkedin /></a>
-          <a className={socialMediaIcon} href={Bio.twitter} target='_blank'><FaTwitter /></a>
+          <a className={socialMediaIcon} href={Bio.x} target='_blank'><FaTwitter /></a>
         </div>
         <div className={copyright}>
         </div>

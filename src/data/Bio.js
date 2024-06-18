@@ -3,7 +3,7 @@ export const Bio = {
     roles: [
         "Frontend Developer. ",
         "Problem Solver.",
-        "Programmar. ",
+        "Programmer. ",
     ],
     description: "As a Frontend Developer, I focus on creating seamless, user-friendly interfaces with a variety of modern web technologies. My passion lies in translating design concepts into functional, high-quality code, ensuring a smooth and enjoyable user experience on every project",
     resume: "https://drive.google.com/file/d/1ffZrcMcn8UatXGIaautbbqpV7ADNaETA/view?usp=sharing",

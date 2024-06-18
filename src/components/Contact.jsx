@@ -1,8 +1,8 @@
-const container = `bg-gradient-to-b from-slate-950 to-slate-900 text-gray-200 p-4`
+const container = `bg-gradient-to-b from-slate-950 to-slate-900 text-gray-200 p-2`
 const wrapper = `flex flex-col gap-3 justify-center items-center my-3`
-const title = `text-center text-amber-600 text-4xl font-bold`
+const title = `text-center text-amber-600 lg:text-4xl text-3xl font-bold`
 const titleDesc = `text-center text-xl`
-const contactForm = `flex flex-col gap-3 bg-gray-950 p-5 rounded-lg w-4/5 md:w-2/3`
+const contactForm = `flex flex-col gap-3 bg-gray-950 p-5 rounded-lg w-4/5 w-full `
 const contactTitle = 'text-amber-600 font-semibold ml-2 text-xl'
 const inputStyle = `bg-gray-700 h-12 p-3 rounded-lg`
 const inputStyleTextArea = 'bg-gray-700 p-3 rounded-lg'

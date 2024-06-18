@@ -11,13 +11,13 @@ const imgStyle = 'rounded-full border border-lime-800 hover:border-lime-500 dura
 const glowingBg = 'absolute inset-0 rounded-full bg-blue-500 opacity-50 blur-lg'; // Adjusted glowing background styles
 const introAboutWrapper = 'flex flex-1 flex-col flex-wrap gap-8';
 const introWrapper = 'flex flex-col gap-3';
-const hiStyle = 'text-amber-500 text-2xl font-bold';
-const nameStyle = 'text-amber-400 text-4xl font-bold';
+const hiStyle = 'text-amber-500 lg:text-2xl text-xl font-bold';
+const nameStyle = 'text-amber-400 lg:text-4xl  text-2xl font-bold';
 const typedWrapper = 'text-xl font-semibold mt-2';
 const aStyle = 'font-bold mr-2';
 const typedStyle = 'text-2xl text-gray-950 p-1 px-4 rounded bg-gradient-to-l text-white';
-const btnStyle = 'w-full md:w-2/5 bg-gradient-to-r from-cyan-500 to-blue-500 shadow hover:shadow-cyan-400 duration-500 text-gray-950 font-semibold rounded-lg p-2 px-5 transform hover:scale-105';
-const linkStyle = 'flex justify-center items-center gap-3 transition duration-300 ease-in-out transform hover:scale-105 text-md';
+const btnStyle = 'md:w-2/5 bg-gradient-to-r from-cyan-500 to-blue-500 shadow hover:shadow-cyan-400 duration-500 text-gray-950 font-semibold rounded-lg p-2 px-3 transform hover:scale-105 ';
+const linkStyle = 'flex justify-center items-center gap-3 transition duration-300 ease-in-out transform hover:scale-105 lg:text-md text-sm';
 const socialMediaWrapper = 'flex justify-center lg:justify-start items-start gap-1 lg:w-1/2';
 const socialMediaIcon = 'ml-2 md:mx-2 hover:text-cyan-400 text-2xl w-10 transition duration-300 ease-in-out transform hover:scale-105';
 
@@ -53,7 +53,7 @@ function About() {
           </div>
         </div>
         <div className='text-base lg:text-lg'> {Bio.description}</div>
-        <div className='flex lg:flex-row flex-col gap-5 w-full'>
+        <div className='flex gap-5 w-full'>
           <button className={btnStyle}>
             <a className={linkStyle} href={SagarikaResume} download='SagarikaResume.pdf' target="_blank">
               Download Resume <FaFileDownload/>

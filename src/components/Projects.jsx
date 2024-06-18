@@ -1,16 +1,15 @@
-import React from 'react'
 import { projects } from '../data/Projects.js'
 
 const container = 'bg-gradient-to-t from-slate-950 to-slate-900 text-gray-100 py-20 lg:px-10 px-5';
 const wrapper = 'flex flex-col justify-center items-center gap-6';
-const title = 'text-4xl font-bold text-amber-500';
-const subTitle = 'text-2xl text-center';
+const title = 'text-3xl lg:text-4xl font-bold text-amber-500';
+const subTitle = 'lg:text-2xl text-xl text-center';
 const projectContainer = 'flex flex-wrap gap-12 md:grid grid-cols-2 lg:grid-cols-3 grid-rows-auto'
 const projectWrapper = 'bg-gray-950 flex flex-col gap-6 py-10 px-7 rounded-lg border border-cyan-800  duration-500 shadow-md hover:shadow-cyan-500'
 const imgWrapper = 'bg-gradient-to-l from-amber-600 to-lime-600 rounded p-px hover:scale-105 duration-500'
 const projectImgStyle = 'rounded'
 const nameDateWrapper = 'flex flex-col gap-1'
-const nameStyle = 'text-amber-600 text-2xl font-semibold'
+const nameStyle = 'text-amber-600 lg:text-2xl text-xl font-semibold'
 const dateStyle = 'text-gray-400 text-sm'
 const skillWrapper = 'flex flex-wrap gap-2'
 const skillStyle = 'px-3 py-1 text-sm text-gray-950 bg-gradient-to-l from-amber-600 to-lime-600 rounded-full'

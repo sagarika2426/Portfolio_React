@@ -4,6 +4,7 @@ import Food_Ordering from '../assets/Food_Ordering.png'
 import recipe_finder from '../assets/recipe_finder.png'
 import password_generator from '../assets/password_generator.png'
 import weather_app from '../assets/weather_app.png'
+import news_portal from '../assets/news_portal.png'
 
 
 
@@ -20,6 +21,16 @@ export const projects = [
     },
     {
         id: 1,
+        img: news_portal,
+        skills: ["React", "Tailwind", "Redux Toolkit", "Material UI", "ExpressJS"],
+        title: 'News Portal',
+        desc: 'A responsive news portal application built with React, allowing users to browse, search, and save news articles.',
+        live: 'https://news-portal-ten-rho.vercel.app/',
+        github: 'https://github.com/sagarika2426/NewsPortal-React'
+    },
+
+    {
+        id: 2,
         img: Food_Ordering,
         skills: ["React", "Tailwind", "Redux Toolkit"],
         title: 'Food Ordering App',
@@ -28,7 +39,7 @@ export const projects = [
         github: 'https://github.com/sagarika2426/Namaste-React/tree/main/Code'
     },
     {
-        id: 2,
+        id: 3,
         img: recipe_finder,
         skills: ["Javascript", "HTML", "CSS"],
         title: 'Recipe Finder',
@@ -37,7 +48,7 @@ export const projects = [
         github: 'https://github.com/sagarika2426/recipe_finder_project'
     },
     {
-        id: 3,
+        id: 4,
         img: password_generator,
         skills: ["React", "Tailwind CSS"],
         title: 'Password Generator',
@@ -46,7 +57,7 @@ export const projects = [
         github: 'https://github.com/sagarika2426/Chai-aur-React/tree/main/04-PasswordGenerator'
     },
     {
-        id: 4,
+        id: 5,
         img: weather_app,
         skills: ["HTML", "CSS", "JS", "DOM"],
         title: 'Weather App',

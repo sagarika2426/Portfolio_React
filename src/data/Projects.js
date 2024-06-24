@@ -35,7 +35,7 @@ export const projects = [
         skills: ["React", "Tailwind", "Redux Toolkit"],
         title: 'Food Ordering App',
         desc: 'Food Ordering App: View Restaureants, Filter Top rated Restaurants, Search, View Menu, Add To Cart, Cart Functionalities',
-        live: 'https://food-ordering-app-flax.vercel.app/',
+        live: 'https://food-ordering-sagarikasahoo.vercel.app/',
         github: 'https://github.com/sagarika2426/Namaste-React/tree/main/Code'
     },
     {

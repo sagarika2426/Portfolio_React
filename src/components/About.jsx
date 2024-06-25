@@ -54,7 +54,7 @@ function About() {
         <p className='text-lg text-gray-300'>{Bio.description}</p>
         <div className='flex flex-wrap gap-4 mt-4'>
           <button className={btnStyle}>
-            <a className={linkStyle} href={'https://drive.google.com/file/d/1-VFIKeBmhqMfQdn0mTeumSYTIXmfpYUu/view?usp=sharing'} target="_blank" rel="noopener noreferrer">
+            <a className={linkStyle} href={'https://drive.google.com/file/d/1n76Lzvc4s_xOrQvEBsJL0SgcNLM4bvKq/view?usp=sharing'} target="_blank" rel="noopener noreferrer">
               <FaEye className='mr-2'/> View Resume
             </a>
           </button>

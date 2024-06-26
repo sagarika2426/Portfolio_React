@@ -53,7 +53,7 @@ export const projects = [
         skills: ["React", "Tailwind CSS"],
         title: 'Password Generator',
         desc: 'Genarate random password by choosing the length of the password. You can aslo add special character or numbers.',
-        live: 'https://password-generator-three-gray.vercel.app/',
+        live: 'https://password-generator-sagarika2426s-projects.vercel.app/',
         github: 'https://github.com/sagarika2426/Chai-aur-React/tree/main/04-PasswordGenerator'
     },
     {

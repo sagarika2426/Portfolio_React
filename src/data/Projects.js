@@ -2,7 +2,7 @@
 import Purrchase from '../assets/Purrchase.png'
 import Food_Ordering from '../assets/Food_Ordering.png'
 import recipe_finder from '../assets/recipe_finder.png'
-import password_generator from '../assets/password_generator.png'
+import password_generator_new from '../assets/password_generator_new.png'
 import weather_app from '../assets/weather_app.png'
 import news_portal from '../assets/news_portal.png'
 
@@ -49,7 +49,7 @@ export const projects = [
     },
     {
         id: 4,
-        img: password_generator,
+        img: password_generator_new,
         skills: ["React", "Tailwind CSS"],
         title: 'Password Generator',
         desc: 'Genarate random password by choosing the length of the password. You can aslo add special character or numbers.',

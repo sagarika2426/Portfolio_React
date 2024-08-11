@@ -4,7 +4,7 @@ const container = 'bg-gradient-to-t from-slate-950 to-slate-900 text-gray-100 py
 const wrapper = 'flex flex-col justify-center items-center gap-6';
 const title = 'text-3xl lg:text-4xl font-bold text-amber-500';
 const subTitle = 'lg:text-2xl text-xl text-center';
-const projectContainer = 'flex flex-wrap gap-12 md:grid grid-cols-2 lg:grid-cols-3 grid-rows-auto'
+const projectContainer = 'flex flex-wrap gap-12 md:grid grid-cols-2 lg:grid-cols-3 grid-rows-auto m-auto'
 const projectWrapper = 'bg-gray-950 flex flex-col gap-6 py-10 px-7 rounded-lg border border-cyan-800  duration-500 shadow-md hover:shadow-cyan-500'
 const imgWrapper = 'bg-gradient-to-l from-amber-600 to-lime-600 rounded p-px hover:scale-105 duration-500'
 const projectImgStyle = 'rounded'
@@ -45,7 +45,7 @@ function Projects() {
                     <div className={nameStyle}>{item.title} </div>
                     <div className={dateStyle} >{item.date} </div>
                   </div>
-                  <div className=''>  {item.desc}  </div>
+                  <div className='text-md'>  {item.desc}  </div>
                   <div className={btnWrapper}>
                     <button className={btnSytle}> <a href={item.live} target='_blank'>Live Demo </a></button>
                     <button className={btnSytle}> <a href={item.github} target='_blank'>Github Repo</a></button>

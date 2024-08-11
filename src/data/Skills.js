@@ -38,6 +38,11 @@ export const skills = [
                 name: "Materil UI",
                 image: "https://avatars.githubusercontent.com/u/33663932?v=4",
             },
+            {
+                id: 1.9,
+                name: "Bootstrap",
+                image: "https://e7.pngegg.com/pngimages/439/345/png-clipart-bootstrap-logo-thumbnail-tech-companies-thumbnail.png",
+            },
             
         ]
     },

@@ -6,7 +6,7 @@ import { Bio } from '../data/Bio';
 
 const container = 'bg-gradient-to-b from-slate-950 to-slate-900 text-gray-100 text-xl p-4 lg:px-24 lg:py-20 flex flex-col md:flex-row-reverse gap-6 justify-center items-center';
 const imgWrapper = 'relative flex-1 flex justify-center items-center'; // Added relative class
-const imgStyle = 'rounded-full border border-lime-800 hover:border-lime-500 duration-500 transform hover:scale-105 w-4/5 lg:w-2/3';
+const imgStyle = 'rounded-full border border-lime-800 hover:border-lime-500 duration-500 transform hover:scale-105 w-3/5 lg:w-2/3';
 const glowingBg = 'absolute inset-0 rounded-full bg-blue-800 opacity-40 blur-lg'; // Adjusted glowing background styles
 const introAboutWrapper = 'flex flex-1 flex-col gap-8 lg:pl-12'; // Added left padding on larger screens
 const introWrapper = 'flex flex-col gap-3';

@@ -5,24 +5,32 @@ import recipe_finder from '../assets/recipe_finder.png'
 import password_generator_new from '../assets/password_generator_new.png'
 import weather_app from '../assets/weather_app.png'
 import news_portal from '../assets/news_portal.png'
-
-
+import Music_Player from "../assets/Music_Player.png"
 
 
 export const projects = [
     {
         id: 0,
         img: Purrchase,
-        skills: ["React", "Tailwind", "MUI", "Redux Toolkit", "NodeJS", "ExpressJS", "MongoDB"],
+        skills: ["ReactJS", "Tailwind", "MUI", "Redux Toolkit", "NodeJS", "ExpressJS", "MongoDB"],
         title: 'PurrChase',
         desc: 'E-commerce website for Cat daily use products such as Food, Toys and Hygiene products',
         live: 'https://purrchase-cat-products.vercel.app/',
         github: 'https://github.com/sagarika2426/PurrChase-Fullstack'
     },
     {
+        id: 0,
+        img: Music_Player,
+        skills: ["ReactJS", "Tailwind", "MUI"],
+        title: 'Music Player',
+        desc: 'A fullly responsive music player application where you can search songs, check top tracks, play songs, control music player. The backgrong color changes according to the album.',
+        live: 'https://music-player-sagarika.vercel.app/',
+        github: 'https://github.com/sagarika2426/Music-Player-React'
+    },
+    {
         id: 1,
         img: news_portal,
-        skills: ["React", "Tailwind", "Redux Toolkit", "Material UI", "ExpressJS"],
+        skills: ["ReactJS", "Tailwind", "Redux Toolkit", "Material UI", "ExpressJS"],
         title: 'News Portal',
         desc: 'A responsive news portal application built with React, allowing users to browse, search, and save news articles.',
         live: 'https://news-portal-ten-rho.vercel.app/',
@@ -32,7 +40,7 @@ export const projects = [
     {
         id: 2,
         img: Food_Ordering,
-        skills: ["React", "Tailwind", "Redux Toolkit"],
+        skills: ["ReactJS", "Tailwind", "Redux Toolkit"],
         title: 'Food Ordering App',
         desc: 'Food Ordering App: View Restaureants, Filter Top rated Restaurants, Search, View Menu, Add To Cart, Cart Functionalities',
         live: 'https://food-ordering-sagarikasahoo.vercel.app/',
@@ -50,7 +58,7 @@ export const projects = [
     {
         id: 4,
         img: password_generator_new,
-        skills: ["React", "Tailwind CSS"],
+        skills: ["ReactJS", "Tailwind CSS"],
         title: 'Password Generator',
         desc: 'Genarate random password by choosing the length of the password. You can aslo add special character or numbers.',
         live: 'https://password-generator-sagarika2426s-projects.vercel.app/',

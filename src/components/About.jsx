@@ -1,7 +1,6 @@
 import pfp from '../assets/pfp.jpg';
-import SagarikaResume from '../assets/SagarikaResume.pdf';
 import { ReactTyped } from 'react-typed';
-import { FaEye, FaFileDownload, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaEye, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { Bio } from '../data/Bio';
 
 const container = 'bg-gradient-to-b from-slate-950 to-slate-900 text-gray-100 text-xl p-4 lg:px-24 lg:py-20 flex flex-col md:flex-row-reverse gap-6 justify-center items-center';

@@ -1,4 +1,3 @@
-import React from 'react'
 import { skills } from '../data/Skills';
 
 const container = `bg-gradient-to-t from-slate-950 to-slate-900 text-gray-100 lg:pt-6 flex flex-wrap`;

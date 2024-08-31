@@ -1,4 +1,4 @@
-import pfp from '../assets/pfp.jpg';
+import pfp from '../assets/pfp.png';
 import { ReactTyped } from 'react-typed';
 import { FaEye, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { Bio } from '../data/Bio';
@@ -9,8 +9,8 @@ const imgStyle = 'rounded-full border border-lime-800 hover:border-lime-500 dura
 const glowingBg = 'absolute inset-0 rounded-full bg-blue-800 opacity-40 blur-lg'; // Adjusted glowing background styles
 const introAboutWrapper = 'flex flex-1 flex-col gap-8 lg:pl-12'; // Added left padding on larger screens
 const introWrapper = 'flex flex-col gap-3';
-const hiStyle = 'text-amber-500 lg:text-2xl text-xl font-bold';
-const nameStyle = 'text-amber-400 lg:text-4xl  text-2xl font-bold';
+const hiStyle = 'lg:text-2xl text-xl font-bold';
+const nameStyle = 'lg:text-4xl  text-2xl font-bold';
 const typedWrapper = 'text-xl font-semibold mt-2';
 const aStyle = 'font-bold mr-2';
 const typedStyle = 'text-2xl text-gray-950 p-1 px-4 rounded bg-gradient-to-l text-white';
@@ -36,7 +36,8 @@ function About() {
       <div className={introAboutWrapper}>
         <div className={introWrapper}>
           <h1 className={hiStyle}> Hi, I am</h1>
-          <h1 className={nameStyle}>Sagarika Sahoo</h1>
+          <h1 className={nameStyle}
+          style={{ color: '#E2B59D' }}>Sagarika Sahoo</h1>
           <div className={typedWrapper}>
             <span className={aStyle}>a</span>
             <ReactTyped

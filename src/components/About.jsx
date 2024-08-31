@@ -51,7 +51,7 @@ function About() {
             />
           </div>
         </div>
-        <p className='lg:text-lg text-md text-gray-300'>{Bio.description}</p>
+        <p className='lg:text-md text-sm text-gray-300'>{Bio.description}</p>
         <div className='flex flex-wrap gap-4 mt-4'>
           <button className={btnStyle}>
             <a className={linkStyle} href={'https://drive.google.com/file/d/1vHjHS3RaiK5WqVn4EZwu0YMF4S7oPCvf/view?usp=sharing'} target="_blank" rel="noopener noreferrer">

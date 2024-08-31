@@ -5,7 +5,7 @@ import { Bio } from '../data/Bio';
 
 const container = 'bg-gradient-to-b from-slate-950 to-slate-900 text-gray-100 text-xl p-4 lg:px-24 lg:py-20 flex flex-col md:flex-row-reverse gap-6 justify-center items-center';
 const imgWrapper = 'relative flex-1 flex justify-center items-center'; // Added relative class
-const imgStyle = 'rounded-full border border-lime-800 hover:border-lime-500 duration-500 transform hover:scale-105 w-3/5 lg:w-2/3';
+const imgStyle = 'rounded-full border border-lime-800 hover:border-lime-500 duration-500 transform hover:scale-105 w-2/3';
 const glowingBg = 'absolute inset-0 rounded-full bg-blue-800 opacity-40 blur-lg'; // Adjusted glowing background styles
 const introAboutWrapper = 'flex flex-1 flex-col gap-8 lg:pl-12'; // Added left padding on larger screens
 const introWrapper = 'flex flex-col gap-3';
@@ -39,7 +39,7 @@ function About() {
           <h1 className={nameStyle}
           style={{ color: '#E2B59D' }}>Sagarika Sahoo</h1>
           <div className={typedWrapper}>
-            <span className={aStyle}>a</span>
+            <span className={aStyle}>A</span>
             <ReactTyped
               className={typedStyle}
               strings={Bio.roles}
@@ -51,10 +51,10 @@ function About() {
             />
           </div>
         </div>
-        <p className='text-lg text-gray-300'>{Bio.description}</p>
+        <p className='lg:text-lg text-md text-gray-300'>{Bio.description}</p>
         <div className='flex flex-wrap gap-4 mt-4'>
           <button className={btnStyle}>
-            <a className={linkStyle} href={'https://drive.google.com/file/d/1n76Lzvc4s_xOrQvEBsJL0SgcNLM4bvKq/view?usp=sharing'} target="_blank" rel="noopener noreferrer">
+            <a className={linkStyle} href={'https://drive.google.com/file/d/1vHjHS3RaiK5WqVn4EZwu0YMF4S7oPCvf/view?usp=sharing'} target="_blank" rel="noopener noreferrer">
               <FaEye className='mr-2'/> View Resume
             </a>
           </button>

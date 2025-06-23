@@ -1,5 +1,6 @@
 
 import Purrchase from '../assets/Purrchase.png'
+import Framer from '../assets/Framers.png'
 import Food_Ordering from '../assets/Food_Ordering.png'
 import recipe_finder from '../assets/recipe_finder.png'
 import password_generator_new from '../assets/password_generator_new.png'

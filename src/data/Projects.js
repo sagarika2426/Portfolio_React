@@ -19,7 +19,16 @@ export const projects = [
         github: 'https://github.com/sagarika2426/PurrChase-Fullstack'
     },
     {
-        id: 0,
+        id: 1,
+        img: Framer,
+        skills: ["ReactJS", "Framer Motion", "Tailwind"],
+        title: 'Framer Motion Controller',
+        desc: 'A simple tool to tweak opacity, scale, rotation, duration, and background color, with real-time updates!',
+        live: 'https://framer-motion-controller.vercel.app/',
+        github: 'https://github.com/sagarika2426/Framer-Motion-Controller'
+    },
+    {
+        id: 2,
         img: Music_Player,
         skills: ["ReactJS", "Tailwind", "MUI"],
         title: 'Music Player',
@@ -28,7 +37,7 @@ export const projects = [
         github: 'https://github.com/sagarika2426/Music-Player-React'
     },
     {
-        id: 1,
+        id: 3,
         img: news_portal,
         skills: ["ReactJS", "Tailwind", "Redux Toolkit", "Material UI", "ExpressJS"],
         title: 'News Portal',
@@ -38,7 +47,7 @@ export const projects = [
     },
 
     {
-        id: 2,
+        id: 4,
         img: Food_Ordering,
         skills: ["ReactJS", "Tailwind", "Redux Toolkit"],
         title: 'Food Ordering App',
@@ -47,7 +56,7 @@ export const projects = [
         github: 'https://github.com/sagarika2426/Namaste-React/tree/main/Code'
     },
     {
-        id: 3,
+        id: 5,
         img: recipe_finder,
         skills: ["Javascript", "HTML", "CSS"],
         title: 'Recipe Finder',
@@ -56,7 +65,7 @@ export const projects = [
         github: 'https://github.com/sagarika2426/recipe_finder_project'
     },
     {
-        id: 4,
+        id: 6,
         img: password_generator_new,
         skills: ["ReactJS", "Tailwind CSS"],
         title: 'Password Generator',
@@ -65,7 +74,7 @@ export const projects = [
         github: 'https://github.com/sagarika2426/Chai-aur-React/tree/main/04-PasswordGenerator'
     },
     {
-        id: 5,
+        id: 7,
         img: weather_app,
         skills: ["HTML", "CSS", "JS", "DOM"],
         title: 'Weather App',

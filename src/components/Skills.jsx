@@ -1,47 +1,69 @@
-import { skills } from '../data/Skills';
+import { skills } from '../data/Skills'
+import { motion } from 'framer-motion'
 
-const container = `bg-gradient-to-t from-slate-950 to-slate-900 text-gray-100 lg:pt-6 flex flex-wrap`;
-const wrapper = `flex flex-col justify-center items-center py-10 md:py-16 lg:px-10 px-4 md:py-10 gap-4 m-auto`;
-const title = 'lg:text-4xl text-3xl font-bold text-amber-500';
-const desc = 'text-xl text-center';
-const skillContainer = 'flex flex-col p-3 gap-6 md:grid grid-cols-2 grid-rows-auto';
-const skillWrapper = 'flex flex-col justify-center items-center bg-gray-950 py-4 p-3 rounded-xl border border-lime-800 hover:border-lime-600 duration-500';
-const skillTitle = 'text-amber-600 lg:text-2xl text-xl font-semibold text-center my-3';
-const skillList = 'flex flex-wrap gap-3 justify-center items-center px-3 py-4';
-const oneSkillStyle = 'flex items-center flex-wrap p-2 border-2 border-gray-700 rounded-xl gap-2';
-const skillImage = 'h-8 w-auto';
-const skillName = 'text-gray-300';
-
-function Skills() {
-  return (
-    <>
-      <div name='skills' className={container}>
-        <div className={wrapper}>
-          <div className={title}>Skills</div>
-          <div className={desc}>Here are some of my skills, on which I have worked </div>
-          <div className={skillContainer}>
-            {
-              skills.map((oneSection) => (
-                <div className={skillWrapper} key={oneSection.id}>
-                  <div className={skillTitle}>{oneSection.title}</div>
-                  <div className={skillList}>
-                    {
-                      oneSection.skill.map((item) => (
-                        <div className={oneSkillStyle} key={item.id}>
-                          <img className={skillImage} src={item.image} alt="" />
-                          <span className={skillName}>{item.name}</span>
-                        </div>
-                      ))
-                    }
-                  </div>
-                </div>
-              ))
-            }
-          </div>
-        </div>
-      </div>
-    </>
-  )
+const containerVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: 'easeOut' }
+  }
 }
 
-export default Skills
+// const itemVariants = {
+//   hidden: { opacity: 0, y: 20 },
+//   visible: { opacity: 1, y: 0, transition: { duration: 0.4 } }
+// }
+
+export default function Skills() {
+  return (
+    <section id="skills" className="bg-gradient-to-t from-slate-950 to-slate-900 py-20 px-4 lg:px-10 text-white">
+      <motion.div
+        className="max-w-7xl mx-auto text-center"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
+        <motion.h2  className="text-4xl lg:text-5xl font-bold text-amber-500 mb-4">
+          Skills
+        </motion.h2>
+        <motion.p className="text-lg text-gray-300 mb-12 max-w-2xl mx-auto">
+          Here are the tools and technologies I’ve worked with. I enjoy constantly learning and improving!
+        </motion.p>
+
+        <motion.div
+          variants={containerVariants}
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          {skills.map((section) => (
+            <motion.div
+              key={section.id}
+             
+              className="bg-white/5 border border-lime-700 hover:border-lime-500 transition duration-300 rounded-xl p-6 shadow-lg backdrop-blur-md"
+            >
+              <h3 className="text-2xl font-semibold text-amber-400 mb-4">{section.title}</h3>
+              <div className="flex flex-wrap gap-4 justify-center">
+                {section.skill.map((item) => (
+                  <motion.div
+                    key={item.id}
+                    className="flex items-center gap-2 px-4 py-2 border border-gray-700 rounded-lg hover:border-amber-400 transition duration-300 bg-white/5"
+                    whileHover={{ scale: 1.05 }}
+                  >
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      className="w-8 h-8 object-contain"
+                      loading="lazy"
+                    />
+                    <span className="text-sm text-gray-200">{item.name}</span>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </motion.div>
+    </section>
+  )
+}

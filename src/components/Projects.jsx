@@ -1,63 +1,63 @@
-import { projects } from '../data/Projects.js'
+import { projects } from '../data/Projects.js';
 
 const container = 'bg-gradient-to-t from-slate-950 to-slate-900 text-gray-100 py-20 lg:px-10 px-5';
-const wrapper = 'flex flex-col justify-center items-center gap-6';
+const wrapper = 'flex flex-col justify-center items-center gap-8';
 const title = 'text-3xl lg:text-4xl font-bold text-amber-500';
-const subTitle = 'lg:text-2xl text-xl text-center';
-const projectContainer = 'flex flex-wrap gap-12 md:grid grid-cols-2 lg:grid-cols-3 grid-rows-auto m-auto'
-const projectWrapper = 'bg-gray-950 flex flex-col gap-6 py-10 px-7 rounded-lg border border-cyan-800  duration-500 shadow-md hover:shadow-cyan-500'
-const imgWrapper = 'bg-gradient-to-l from-amber-600 to-lime-600 rounded p-px hover:scale-105 duration-500'
-const projectImgStyle = 'rounded'
-const nameDateWrapper = 'flex flex-col gap-1'
-const nameStyle = 'text-amber-600 lg:text-2xl text-xl font-semibold'
-const dateStyle = 'text-gray-400 text-sm'
-const skillWrapper = 'flex flex-wrap gap-2'
-const skillStyle = 'px-3 py-1 text-sm text-gray-950 bg-gradient-to-l from-amber-600 to-lime-600 rounded-full'
-const btnWrapper = 'flex justify-between gap-4';
-const btnSytle = 'bg-gradient-to-r from-cyan-500 to-blue-500 shadow hover:shadow-cyan-400 duration-500 rounded-lg text-gray-950 lg:py-3 lg:px-5 px-4 py-2';
-
+const subTitle = 'lg:text-xl text-lg text-gray-300 text-center max-w-2xl';
+const projectContainer = 'grid gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full mt-10';
+const projectWrapper = 'bg-gray-950 flex flex-col gap-5 p-6 rounded-xl border border-cyan-800 hover:border-cyan-500 duration-500 shadow-md hover:shadow-cyan-400';
+const imgWrapper = 'bg-gradient-to-l from-amber-600 to-lime-600 rounded-md p-1 hover:scale-105 duration-500';
+const projectImgStyle = 'rounded-md w-full h-auto object-cover';
+const nameDateWrapper = 'flex flex-col gap-1';
+const nameStyle = 'text-amber-500 text-xl font-semibold';
+const dateStyle = 'text-gray-500 text-sm';
+const skillWrapper = 'flex flex-wrap gap-2';
+const skillStyle = 'px-3 py-1 text-sm font-medium text-gray-900 bg-gradient-to-l from-amber-500 to-lime-500 rounded-full';
+const descStyle = 'text-sm text-gray-300 leading-relaxed';
+const btnWrapper = 'flex justify-between gap-3 pt-2';
+const btnStyle = 'bg-gradient-to-r from-cyan-500 to-blue-500 text-gray-950 font-semibold px-4 py-2 rounded-lg shadow hover:shadow-cyan-400 duration-300 text-sm';
 
 function Projects() {
   return (
     <div name='projects' className={container}>
       <div className={wrapper}>
         <div className={title}>Projects</div>
-        <div className={subTitle}>Here is My Recent Projects defining Experience </div>
+        <div className={subTitle}>A showcase of my recent work — blending functionality and creativity</div>
+
         <div className={projectContainer}>
-          {
-            projects.map((item, index) => {
-              return (
-                <div className={projectWrapper} key={index}>
-                  <div className={imgWrapper}>
-                    <img
-                      className={projectImgStyle}
-                      src={item.img}
-                      alt="" />
-                  </div>
-                  <div className={skillWrapper}>
-                    {
-                      item.skills.map((skill, index) => (
-                        <div className={skillStyle} key={index}> {skill} </div>
-                      ))
-                    }
-                  </div>
-                  <div className={nameDateWrapper}>
-                    <div className={nameStyle}>{item.title} </div>
-                    <div className={dateStyle} >{item.date} </div>
-                  </div>
-                  <div className='text-md'>  {item.desc}  </div>
-                  <div className={btnWrapper}>
-                    <button className={btnSytle}> <a href={item.live} target='_blank'>Live Demo </a></button>
-                    <button className={btnSytle}> <a href={item.github} target='_blank'>Github Repo</a></button>
-                  </div>
-                </div>
-              )
-            })
-          }
+          {projects.map((item, index) => (
+            <div className={projectWrapper} key={index}>
+              <div className={imgWrapper}>
+                <img className={projectImgStyle} src={item.img} alt={item.title} />
+              </div>
+
+              <div className={skillWrapper}>
+                {item.skills.map((skill, i) => (
+                  <span className={skillStyle} key={i}>{skill}</span>
+                ))}
+              </div>
+
+              <div className={nameDateWrapper}>
+                <div className={nameStyle}>{item.title}</div>
+                <div className={dateStyle}>{item.date}</div>
+              </div>
+
+              <div className={descStyle}>{item.desc}</div>
+
+              <div className={btnWrapper}>
+                <a href={item.live} target='_blank'>
+                  <button className={btnStyle}>Live Demo</button>
+                </a>
+                <a href={item.github} target='_blank'>
+                  <button className={btnStyle}>GitHub Repo</button>
+                </a>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Projects
+export default Projects;

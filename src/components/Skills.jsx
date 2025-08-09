@@ -25,10 +25,10 @@ export default function Skills() {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <motion.h2  className="text-4xl lg:text-5xl font-bold text-amber-500 mb-4">
+        <motion.h2  className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
           Skills
         </motion.h2>
-        <motion.p className="text-lg text-gray-300 mb-12 max-w-2xl mx-auto">
+        <motion.p className="text-md text-gray-300 mb-12 max-w-2xl mx-auto">
           Here are the tools and technologies I’ve worked with. I enjoy constantly learning and improving!
         </motion.p>
 
@@ -42,7 +42,7 @@ export default function Skills() {
              
               className="bg-white/5 border border-lime-700 hover:border-lime-500 transition duration-300 rounded-xl p-6 shadow-lg backdrop-blur-md"
             >
-              <h3 className="text-2xl font-semibold text-amber-400 mb-4">{section.title}</h3>
+              <h3 className="text-xl font-semibold text-amber-400 mb-4">{section.title}</h3>
               <div className="flex flex-wrap gap-4 justify-center">
                 {section.skill.map((item) => (
                   <motion.div

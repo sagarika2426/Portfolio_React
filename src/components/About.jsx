@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Eye, Github, Linkedin, Twitter, MapPin, Mail, Palette } from 'lucide-react';
+import pfp from '../assets/pfp.png';
 
-// Mock data - replace with your actual imports
+
 const Bio = {
   name: "Sagarika Sahoo",
   title: "Software Developer",
@@ -16,7 +17,6 @@ const Bio = {
   resume: "https://drive.google.com/file/d/10qFkLHW-XBIIA6YH80vP9bKrdWqjL5C2/view?usp=sharing"
 };
 
-const pfp = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Ccircle cx='150' cy='150' r='150' fill='%23E2B59D'/%3E%3Ctext x='150' y='160' text-anchor='middle' font-size='60' fill='%23fff'%3ES%3C/text%3E%3C/svg%3E";
 
 const typingTexts = [
   'Frontend Developer',
@@ -57,21 +57,21 @@ export default function About() {
   ];
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-white relative overflow-hidden">
+<section className="min-h-[80vh] bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-white relative overflow-hidden">
       {/* Background Effects */}
-      <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1000ms'}} />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-cyan-500/5 to-blue-500/5 rounded-full blur-3xl" />
-      </div>
+    <div className="absolute inset-0">
+    <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-cyan-500/10 rounded-full blur-3xl animate-pulse" />
+    <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1000ms'}} />
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-cyan-500/5 to-blue-500/5 rounded-full blur-3xl" />
+  </div>
 
-      <div className="relative z-10 container mx-auto px-6 py-20">
-        <div className="grid lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
+  <div className="relative  container mx-auto px-10 py-8">
+    <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
           {/* Profile Section */}
-          <div className="flex flex-col items-center lg:items-start space-y-8">
+      <div className="flex flex-col items-center lg:items-start space-y-6">
             {/* Profile Image */}
             <div className="relative group">
-              <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-500" />
+<div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-500" />
               <div className="relative">
                 <img
                   src={pfp}
@@ -107,11 +107,11 @@ export default function About() {
                 <span className="text-cyan-400 font-medium">Hello, I'm</span>
               </div>
 
-              <h1 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent leading-tight">
+              <h1 className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent leading-tight">
                 {Bio.name}
               </h1>
 
-              <div className="flex items-center gap-2 text-xl lg:text-2xl text-gray-300">
+              <div className="flex items-center gap-2 text-xl lg:text-xl text-gray-300">
                 <span>I'm a</span>
                 <span className="text-cyan-400 font-semibold min-w-[200px]">
                   {currentText}
@@ -121,7 +121,7 @@ export default function About() {
             </div>
 
             {/* Description */}
-            <p className="text-gray-300 text-lg leading-relaxed max-w-2xl">
+            <p className="text-gray-300 text-md leading-relaxed max-w-2xl">
               {Bio.description}
             </p>
 

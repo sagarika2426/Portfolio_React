@@ -17,7 +17,7 @@ const mobileNavUl = "flex flex-col gap-7 justify-center items-center";
 
 function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
-  const sections = ["about", "skills", "projects", "contact"];
+  const sections = ["About", "skills", "projects", "contact"];
 
   const capitalizeFirstLetter = (word) => {
     return word.charAt(0).toUpperCase() + word.slice(1);

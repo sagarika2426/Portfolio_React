@@ -10,7 +10,7 @@ const Bio = {
   email: "sagarikasahoo16@gmail.com",
   experience: "1+ Years",
   description: "Passionate frontend developer with a keen eye for design and user experience. I love creating beautiful, functional web applications that solve real-world problems. When I'm not coding, you'll find me exploring new technologies or contributing to open-source projects.",
-  skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Framer Motion", "Node.js"],
+  skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Node.js", "MongoDB"],
   github: "https://github.com/sagarika2426",
   linkedin: "https://www.linkedin.com/in/sagarika2412/",
   twitter: "https://x.com/_Sagarika_Sahoo",
@@ -57,7 +57,7 @@ export default function About() {
   ];
 
   return (
-<section className="min-h-[80vh] bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-white relative overflow-hidden">
+<section name="About" className="min-h-[80vh] bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-white relative overflow-hidden">
       {/* Background Effects */}
     <div className="absolute inset-0">
     <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-cyan-500/10 rounded-full blur-3xl animate-pulse" />
@@ -170,10 +170,16 @@ export default function About() {
                 View Resume
               </a>
 
-              <button className="inline-flex items-center px-6 py-3 border border-white/20 text-white hover:bg-white/10 hover:border-white/40 transition-all duration-300 rounded-lg font-semibold">
-                <Mail className="w-4 h-4 mr-2" />
-                Get In Touch
-              </button>
+            <button
+  onClick={() =>
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+  }
+  className="inline-flex items-center px-6 py-3 border border-white/20 text-white hover:bg-white/10 hover:border-white/40 transition-all duration-300 rounded-lg font-semibold"
+>
+  <Mail className="w-4 h-4 mr-2" />
+  Get In Touch
+</button>
+
             </div>
 
             {/* Social Links */}

@@ -50,7 +50,7 @@ export default function Contact() {
               Get In Touch
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto mb-6" />
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
               Have a project in mind or just want to say hi? Let’s connect and
               create something awesome together.
             </p>
@@ -60,7 +60,7 @@ export default function Contact() {
             {/* Info Section */}
             <motion.div variants={itemVariants} className="space-y-8">
               <div>
-                <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
+                <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
                   <FiSend className="text-cyan-400" />
                   Contact Info
                 </h3>
@@ -118,7 +118,7 @@ export default function Contact() {
                 method="POST"
                 className="space-y-6 bg-white/5 border border-white/10 rounded-xl p-8"
               >
-                <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
+                <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
                   <FiSend className="text-cyan-400" />
                   Send a Message
                 </h3>
